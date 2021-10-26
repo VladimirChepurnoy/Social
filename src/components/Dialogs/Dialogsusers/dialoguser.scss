@@ -1,0 +1,27 @@
+.dialog{
+    &-item{
+        display: flex;
+        border-bottom:2px solid gray;
+        
+        align-items: center;
+        width: 216px;
+        padding:5px 0px 5px 20px;
+
+        &__img{
+            width: 50px;
+            height: 50px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                
+            }
+        }
+        &__name{
+            margin-left: 20px;
+
+        }
+    }
+    
+}

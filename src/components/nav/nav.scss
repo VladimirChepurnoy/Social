@@ -1,0 +1,32 @@
+.nav{
+    
+    position: fixed;
+    &__bar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgba($color: #ffffff, $alpha: 1);
+    
+    }
+    
+    &__bar-link{
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        flex-direction: row;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.342);
+            color: white;
+            }
+        &-img{
+          width: 25px; 
+          height: 25px;
+          margin-right: 5px; 
+        }
+    }
+}

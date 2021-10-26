@@ -1,0 +1,27 @@
+.dialog{
+    margin-left: 220px;
+    border: 1px solid green;
+}
+.dialog-row{
+    display: flex;
+    flex-direction: row;
+}
+.dialog-col{
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    overflow: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track{
+        background: orange;
+        
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: blue;
+        border-radius: 20px;
+        border:3px solid orange;
+    }
+}

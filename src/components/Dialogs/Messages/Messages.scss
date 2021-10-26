@@ -1,0 +1,74 @@
+.Messages{
+    width: 785px;
+    height: 100%;
+    position: relative;
+    &__header{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        height: 80px;
+        border-bottom: 2px gray solid;
+        display: flex;
+        align-items: center;
+        &-img{
+            border-radius: 50%;
+            width: 80px;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius:50%;
+            }
+        }
+        &-name{
+            margin-left: 20px;
+            font-size: 26px;
+        }
+        
+    }
+    &__message{
+        display: flex;
+        flex-direction:column;
+        position: absolute;
+        max-height: 100%;
+        
+        bottom: 70px;
+
+    }
+    &__send{
+        display: flex;
+        align-items: center;
+        
+        width:100%;
+        min-height: 50px;
+        position:absolute;
+        bottom:5px;
+        left:0;
+        border-top: 1px gray solid;
+        &__text{
+            position:relative;
+            width: 650px;
+            min-height: 50px;
+            margin-top: 10px;
+            
+            margin-left: 5px;
+            padding: 2px;
+            border: solid grey 2px;
+            border-radius:5px;
+        &:empty::before{
+            content: attr(data-placeholder);
+            color: gray;
+            display: inline-block;
+        }
+            
+        }
+        &__btn{
+            margin-left: 10px;
+            border: grey 2px solid;
+            border-radius:10px;
+            background-color:khaki;
+        }
+    }
+}
